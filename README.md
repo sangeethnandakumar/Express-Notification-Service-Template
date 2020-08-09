@@ -7,7 +7,7 @@ sc.exe create <NameOfService> binpath= C:\test\service.exe start= auto
 ```
 ## Powershell To UnInstall Service
 Open powershell and execute the command to install service on Windows Machines
-> STOP Service first
+> STOP Service first & execute the command
 ```powershell
 sc.exe delete <NameOfService>
 ```
