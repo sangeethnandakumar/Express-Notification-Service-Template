@@ -33,6 +33,7 @@ namespace NotificationService
                     });
 
                     services.AddHostedService<Worker>();
-                });
+                })
+                .UseWindowsService();;
     }
 }
