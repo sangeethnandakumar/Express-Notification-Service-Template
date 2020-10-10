@@ -18,7 +18,8 @@ Host.CreateDefaultBuilder(args)
          services.AddSingleton<IConsoleDataProvider, ConsoleDataProvider>();
      }).UseWindowsService();
 ```
-## Release Mode => Build
+
+### Now Release Mode => Build
 
 ## Powershell To Install Service
 Open powershell and execute the command to install service on Windows Machines
