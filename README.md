@@ -4,7 +4,9 @@
 Install these nuGet libraries
 ```nuget
 Microsoft.Extensions.Hosting
+Microsoft.Extensions.Hosting.WindowsServices
 ```
+
 Add UseWindowsService(); on program.cs
 ```csharp
 Host.CreateDefaultBuilder(args)
