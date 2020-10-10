@@ -1,5 +1,18 @@
 # Express-Notification-Service-Template
 
+## Enable Console out only while Debugging
+console out on a Windows Service can create errors espcly while using ColorfulConsole
+```csharp
+var hasConsoleOut = configuration.GetSection("EnableConsoleOut").Get<bool>();
+if(hasConsoleOut)
+{
+     Console.Clear();
+     ConsoleHeader();
+     ConsoleInfo();
+     QueueList();
+}
+```
+
 ## To Run As A Windows Service
 Install these nuGet libraries
 ```nuget
